@@ -2,8 +2,8 @@ import { createInstrumenter } from 'istanbul-lib-instrument';
 import loaderUtils from 'loader-utils';
 import validateOptions from 'schema-utils';
 import convert from 'convert-source-map';
+import schema from './options.json';
 /* eslint-disable-line */
-const schema = require('./options');
 
 export default function (source, sourceMap) {
   const options = Object.assign({ produceSourceMap: true }, loaderUtils.getOptions(this));

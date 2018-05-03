@@ -43,5 +43,31 @@ var _convertSourceMap2 = _interopRequireDefault(_convertSourceMap);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var schema = {
+  type: 'object',
+  properties: {
+    debug: {
+      type: 'boolean'
+    },
+    compact: {
+      type: 'boolean'
+    },
+    autoWrap: {
+      type: 'boolean'
+    },
+    esModules: {
+      type: 'boolean'
+    },
+    coverageVariable: {
+      type: 'string'
+    },
+    preserveComments: {
+      type: 'boolean'
+    },
+    produceSourceMap: {
+      type: 'boolean'
+    }
+  },
+  additionalProperties: true
+};
 /* eslint-disable-line */
-var schema = require('./options');

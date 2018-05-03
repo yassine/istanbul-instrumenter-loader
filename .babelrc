@@ -1,48 +1,7 @@
 {
-  "presets": [
-    [
-      "env",
-      {
-        "useBuiltIns": true,
-        "targets": {
-          "node": "4.8"
-        },
-        "exclude": [
-          "transform-async-to-generator",
-          "transform-regenerator"
-        ]
-      }
-    ],
-    [
-      "env",
-      {
-        "useBuiltIns": true,
-        "targets": {
-          "node": "4.3"
-        },
-        "exclude": [
-          "transform-async-to-generator",
-          "transform-regenerator"
-        ]
-      }
-    ]
-  ],
+  "presets": ["es2015"],
   "plugins": [
-    [
-      "transform-object-rest-spread",
-      {
-        "useBuiltIns": true
-      }
-    ]
-  ],
-  "env": {
-    "test": {
-      "presets": [
-        "env"
-      ],
-      "plugins": [
-        "transform-object-rest-spread"
-      ]
-    }
-  }
+    ["inline-json-import", {}]
+  ]
 }
+
