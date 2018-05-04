@@ -28,8 +28,8 @@
     ]
   ],
   "plugins": [
+    "inline-json-import",
     [
-      "inline-json-import",
       "transform-object-rest-spread",
       {
         "useBuiltIns": true
